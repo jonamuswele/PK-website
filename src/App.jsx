@@ -31,6 +31,20 @@ const publications = [
   },
   {
     year: 2024,
+    authors: "Ngoy Y., Nshimba H., Kaleme Prince, Kpane J., Musalizi Muharabu L.",
+    title: "Biomass and Carbon of Trees and Shrubs in the Commune of Mbunya in the City of Bunia, Ituri Province, DRC.",
+    journal: "American Academic Scientific Research Journal for Engineering, Technology, and Sciences (ASRJETS) – Vol. 97, No 1, pp 150–157",
+    doi: null,
+  },
+  {
+    year: 2024,
+    authors: "Ngoy Y., Nshimba H., Kaleme Prince, Kahindo J., Musalizi Muharabu L.",
+    title: "Inventory of Urban Trees in the City of Bunia, Case of the Mudzipela District, Ituri Province, DRC.",
+    journal: "American Academic Scientific Research Journal for Engineering, Technology, and Sciences (ASRJETS) – Vol. 97, No 1, pp 158–168",
+    doi: null,
+  },
+  {
+    year: 2024,
     authors: "Ngoy Y., Nshimba H., Kaleme Prince, Kahindo J., Musalizi Muharabu L.",
     title: "Inventory of Urban Trees in the City of Bunia, Case of the Mudzipela District, Ituri Province, DRC.",
     journal: "ASRJETS – Vol. 97, No 1, pp 158–168",
@@ -100,10 +114,45 @@ const publications = [
     doi: null,
   },
   {
+    year: 2016,
+    authors: "Bakwo Fils E.M., Kaleme P. & Weber N.",
+    title: "Megaloglossus woermanni.",
+    journal: "The IUCN Red List of Threatened Species 2016: e.T84462869A22012371",
+    doi: "https://dx.doi.org/10.2305/IUCN.UK.2016-1.RLTS.T84462869A22012371.en",
+  },
+  {
+    year: 2016,
+    authors: "Bakwo Fils E.M. & Kaleme P.",
+    title: "Micropteropus pusillus.",
+    journal: "The IUCN Red List of Threatened Species 2016: e.T13402A22126384",
+    doi: "https://dx.doi.org/10.2305/IUCN.UK.2016-1.RLTS.T13402A22126384.en",
+  },
+  {
+    year: 2016,
+    authors: "Bakwo Fils E.M. & Kaleme P.",
+    title: "Myonycteris torquata.",
+    journal: "The IUCN Red List of Threatened Species 2016: e.T84463104A22046504",
+    doi: "https://dx.doi.org/10.2305/IUCN.UK.2016-1.RLTS.T84463104A22046504.en",
+  },
+  {
     year: 2015,
     authors: "Cerling T.E., et al., Kaleme Prince, et al.",
     title: "Dietary changes of large herbivores in the Turkana Basin, Kenya from 4 to 1 Ma.",
     journal: "PNAS",
+    doi: null,
+  },
+  {
+    year: 2014,
+    authors: "Mangambu Mokoso J.D.D., Robbrecht E., Janssen T., Misakabu Majiba F., Kaleme Kiswele Prince, Ntahobavuka Habimana H. & van Diggelen R.",
+    title: "Analysis of the Congolese distribution of ferns and allies mountainous of Kahuzi Biega National Park (DRC): contribution to the conservation of actual protected areas in the park.",
+    journal: "International Journal of Biological Sciences (IJBS) Vol. 01, No. 06, pp. 01–23",
+    doi: null,
+  },
+  {
+    year: 2014,
+    authors: "Kaleme P.K., Kaningini M.B., Kahindo M.N.C., Kujirakwinja D., Nishuli R., Chifundera K.Z., Ndakala P., Magadju C. & Abulwa E.",
+    title: "État des lieux de la biodiversité – Province du Sud Kivu.",
+    journal: "In: États des lieux de la Biodiversité de la RD Congo, pp. 338–380",
     doi: null,
   },
   {
@@ -125,6 +174,13 @@ const publications = [
     authors: "Kaleme P.K., Bates J.M., Belesi H.K., et al.",
     title: "Origin and putative colonization routes for invasive rodent taxa in the Democratic Republic of Congo.",
     journal: "African Zoology 46(1): 133–145",
+    doi: null,
+  },
+  {
+    year: 2010,
+    authors: "Hoffman M.T., Rohde R.F., Duncan J. & Kaleme P.",
+    title: "Repeat photography, climate change and the long-term population dynamics of tree Aloes in southern Africa.",
+    journal: "In: Repeat Photography — Methods and Applications in the Natural Sciences. Island Press, Washington DC. ISBN 978-1-59726-713-7",
     doi: null,
   },
   {
@@ -162,8 +218,36 @@ const publications = [
     journal: "Diversity and Distributions 13, 645–653",
     doi: null,
   },
+  
+  {
+    year: 2005,
+    authors: "Matsubara M., Basabose K., Omari I., Kaleme K., Kizungu B., Sikubwabo K., Kahindo M., Yamagiwa J. & Takenaka O.",
+    title: "Species and sex identification of western lowland gorillas (Gorilla gorilla gorilla), eastern lowland gorillas (Gorilla beringei graueri) and humans.",
+    journal: "Primates, 46: pp 199–202",
+    doi: null,
+  },
+  {
+    year: 2003,
+    authors: "Yamagiwa J., Basabose K., Kaleme K. & Yumoto T.",
+    title: "Within-group feeding competition and socioecological factors influencing social organization of gorillas in the Kahuzi-Biega National Park, DRC.",
+    journal: "In: Gorilla Biology: A Multidisciplinary Perspective, Cambridge University Press, pp. 230–257",
+    doi: null,
+  },
+  {
+    year: 1998,
+    authors: "Hall J., White L., Inogwabini B., Omari I., Morland H.S., Williamson L., Saltonstall K., Walsh P., Sikubwabo C., Dumbo B., Kaleme P.K., Vedder A. & Freeman K.",
+    title: "Survey of Grauer's Gorillas (Gorilla gorilla graueri) and Eastern Chimpanzees (Pan troglodytes schweinfurthii) in Kahuzi-Biega National Park Lowland sector and adjacent Forest in Eastern DRC.",
+    journal: "International Journal of Primatology, vol. 19, No 2",
+    doi: null,
+  },
+  {
+    year: 1996,
+    authors: "Yamagiwa J., Kaleme K., Mwanga M. & Basabose K.",
+    title: "Food Density and Ranging Pattern of gorillas and chimpanzees in Kahuzi-Biega National Park, Zaire.",
+    journal: "TROPICS, vol. 6½, pp 65–77",
+    doi: null,
+  },
 ];
-
 const backgroundSections = [
   {
     title: "The Albertine Rift",
