@@ -164,6 +164,29 @@ const publications = [
   },
 ];
 
+const backgroundSections = [
+  {
+    title: "The Albertine Rift",
+    content: `The Albertine Rift extends from the Lendu Plateau at the northern tip of Lake Albert down to the southern tip of Lake Tanganyika. It has been independently identified as an Endemic Bird Area (BirdLife International), an Ecoregion (WWF), and a Biodiversity Hotspot (Conservation International), making it an area of global conservation importance. Its central location within the continent gives it links to Cameroon and Angola to the west, the Kenyan Highlands to the northeast, the Eastern Arc Mountains to the southeast, and the Guinea-Congolian lowland rainforest to the west — producing a uniquely diverse transitional flora and fauna. The Albertine Rift is home to 402 mammal species with 35 endemics, mostly rodents and shrews, as well as iconic species such as the Mountain Gorilla, eastern chimpanzee, and forest elephant. Despite its richness, it remains one of Africa's most poorly documented regions for biodiversity, with major gaps in knowledge from areas like Itombwe, Kabobo, and other highland zones.`,
+  },
+  {
+    title: "Mammalogy",
+    content: `Mammalogy is the branch of Biology specialised in the study of mammals — a class of vertebrates defined by homeothermic metabolism, fur, mammary glands, a four-chambered heart, and a complex nervous system. The number of described mammal species on Earth currently stands at 6,495, with approximately 1,251 newly discovered since 2006. The major branches of mammalogy include natural history, taxonomy and systematics, anatomy and physiology, ethology, ecology, biogeography, and conservation management. Dr. Kaleme is a member of the American Society of Mammalogy.`,
+  },
+  {
+    title: "One Health",
+    content: `One Health is an integrated, unifying approach that aims to sustainably balance and optimize the health of humans, animals, plants and ecosystems. It recognizes that the health of humans, domestic and wild animals, plants and the wider environment are closely linked and interdependent. The approach mobilizes multiple sectors, disciplines and communities at varying levels of society to work together to foster well-being and tackle threats to health and ecosystems — addressing the collective need for clean water, energy and air, safe and nutritious food, action on climate change, and sustainable development. Dr. Kaleme is a member of the One Health Consortium in DR Congo, Sud Kivu Province, and serves as Focal Point for the Centre de Surveillance de la Biodiversité, Antenne du Sud Kivu. Source: One Health Joint Plan of Action (2022–2026), FAO / UNEP / WHO / WOAH.`,
+  },
+  {
+    title: "Phylogeography",
+    content: `Phylogeography is the study of the historical processes responsible for the past and present geographic distributions of genealogical lineages. It is accomplished by considering the geographic distribution of individuals in light of genetics — particularly population genetics. The term was introduced by John Avise in 1987 to describe geographically structured genetic signals within and among species. Past events that can be inferred include population expansion, bottlenecks, vicariance, dispersal, and migration. Phylogeography sits at the intersection of biogeography, population genetics, and evolutionary biology. It is one of the core methodological pillars of Dr. Kaleme's research on small mammals across the Albertine Rift.`,
+  },
+  {
+    title: "Conservation Biology",
+    content: `Conservation biology is concerned with the maintenance, loss, and restoration of biodiversity, and with sustaining the evolutionary processes that engender genetic, population, species, and ecosystem diversity. The field emerged from concern over tropical deforestation, disappearing species, and eroding genetic diversity. Estimates suggest that up to 50% of all species on the planet could disappear within the next 50 years. The field is inherently multidisciplinary, bridging theory in ecology and evolutionary genetics with conservation policy and practice, and has given rise to subdisciplines including conservation social science, conservation behaviour, and conservation physiology. The term was formalised at the first International Conference on Research in Conservation Biology, held at UC San Diego in 1978.`,
+  },
+];
+
 const researchAreas = [
   {
     icon: "🦇",
@@ -716,6 +739,17 @@ export default function App() {
               </div>
             ))}
           </div>
+          <h2 style={{ ...styles.sectionTitle, marginTop: "2.5rem" }}>Background & Concepts</h2>
+          {backgroundSections.map((sec, i) => (
+            <details key={i} style={{ ...styles.card, marginBottom: "0.85rem" }}>
+              <summary style={{ fontWeight: "bold", fontSize: "0.95rem", color: "#1c3a2f", cursor: "pointer", padding: "0.25rem 0" }}>
+                {sec.title}
+              </summary>
+              <p style={{ marginTop: "0.75rem", fontSize: "0.88rem", lineHeight: 1.8, color: "#333" }}>
+                {sec.content}
+              </p>
+            </details>
+          ))}
         </div>
       )}
 
