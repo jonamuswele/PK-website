@@ -545,7 +545,7 @@ export default function App() {
           <h2 style={styles.sectionTitle}>About</h2>
           <div style={styles.card}>
             <p style={{ margin: "0 0 0.9rem", lineHeight: 1.8, fontSize: "0.97rem" }}>
-              Dr. Prince Kaleme Kiswele is one of central Africa's most distinguished field biologists — a scientist whose career has unfolded almost entirely in one of the world's most extraordinary, and most dangerous, biodiversity hotspots: the Albertine Rift of eastern DR Congo. With over 1,450 citations to his name and 28 published scientific works on ResearchGate alone, his influence reaches far beyond the forests he has spent decades walking through. 
+              Dr. Prince Kaleme Kiswele is one of central Africa's most distinguished field biologists — a scientist whose career has unfolded almost entirely in one of the world's most extraordinary, and most dangerous, biodiversity hotspots: the Albertine Rift of eastern DR Congo. With over 1,450 citations to his name and 28 published scientific works (including a book and two book chapters) on ResearchGate alone, his influence reaches far beyond the forests he has spent decades walking through. 
             </p>
             <p style={{ margin: "0 0 0.9rem", lineHeight: 1.8, fontSize: "0.97rem" }}>
               Born in Bandundu Province (now Kwilu), he grew up in western Congo where, even before his university years, he knew he had a passion for research — drawn in first by the biology lectures of his American teachers, and later by the fieldwork of an undergraduate professor who showed him what a scientist's life could look like. He completed his early education in Bandundu before moving east to Bukavu for his honours degree, and briefly taught secondary school before the pull of research proved irresistible.
@@ -735,6 +735,7 @@ export default function App() {
 
           <h2 style={{ ...styles.sectionTitle, marginTop: "2.5rem" }}>Training & Courses</h2>
           {[
+            { year: "2024", item: "Procedure for taking samples from captured rodents and bats – and use of personal protective equipment." },
             { year: "2008", item: "Basic GIS course, Stellenbosch University, South Africa" },
             { year: "2005–06", item: "Theory and practice of stable light isotopes spectrometry, Dept. of Archaeology, UCT" },
             { year: "2004", item: "Training on data collection and management in tropical rain forest, WCS – DR Congo" },
@@ -845,9 +846,24 @@ export default function App() {
               since: "2013–present",
             },
             {
-              title: "Professor & Head of Laboratory Section",
-              org: "Institut Supérieur des Techniques Médicales (ISTM), Bukavu",
-              since: "2015–present",
+              title: "Professor of Mammalogy",
+              org: "Université Officielle de Bukavu",
+              since: "2024–present",
+            },
+            {
+              title: "Professor of Renewable natural resource management, Mammalogy & Animal biology",
+              org: "Université Shalom de Bunia",
+              since: "2024–present",
+            },
+            {
+              title: "Member of Consortium",
+              org: "One Health Consortium DR Congo",
+              since: "2024–present",
+            },
+            {
+              title: "Focal point (Antenne du Sud Kivu",
+              org: "Centre de Surveillance de la Biodiversité",
+              since: "2024–present",
             },
           ].map((pos, i) => (
             <div key={i} style={{ ...styles.card, borderLeft: "4px solid #d4a84b" }}>
