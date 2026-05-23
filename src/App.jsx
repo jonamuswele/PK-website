@@ -939,7 +939,7 @@ export default function App() {
               since: "2024–present",
             },
             {
-              title: "Focal point (Antenne du Sud Kivu",
+              title: "Focal point (Antenne du Sud Kivu)",
               org: "Centre de Surveillance de la Biodiversité",
               since: "2024–present",
             },
