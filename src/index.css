@@ -1,0 +1,123 @@
+:root {
+  --font-serif: 'Newsreader', 'EB Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --forest-900: #0f241a;
+  --forest-800: #153325;
+  --forest-700: #1c3e2e;
+  --forest-600: #25523d;
+  --forest-500: #31684f;
+  --forest-100: #e9f2ed;
+  --forest-50: #f3f7f4;
+
+  --gold-600: #a47823;
+  --gold-500: #c99834;
+  --gold-400: #dfb252;
+  --gold-100: #fbf4e4;
+
+  --sand-50: #fcfbf8;
+  --sand-100: #f7f4ee;
+  --sand-200: #eee8dc;
+  --sand-300: #e1d9ca;
+  --sand-400: #cfc4b2;
+  --sand-800: #4a4337;
+  --sand-900: #231f18;
+
+  --text-main: #1e2421;
+  --text-muted: #56615b;
+  --text-light: #7c8882;
+
+  --card-bg: #ffffff;
+  --card-border: #e6e0d4;
+  --shadow-sm: 0 1px 3px rgba(15, 36, 26, 0.05);
+  --shadow-md: 0 4px 16px rgba(15, 36, 26, 0.07), 0 1px 3px rgba(15, 36, 26, 0.04);
+  --shadow-lg: 0 12px 32px rgba(15, 36, 26, 0.12), 0 2px 6px rgba(15, 36, 26, 0.05);
+  --bg-about-main: #fbf9f4;
+  --bg-about-degrees: #f4eee2;
+  --bg-about-personal: #ebf3ed;
+  --bg-about-refs: #f7f3e8;
+
+  --bg-research-main: #f0f5f2;
+  --bg-research-expeditions: #f6efe5;
+  --bg-research-mammalogy: #fdfbf7;
+  --bg-research-onehealth: #eef6f2;
+  --bg-research-phylo: #f7f2e8;
+  --bg-research-conservation: #eff4ef;
+
+  --bg-career-main: #f6f1e6;
+  --bg-publications-main: #faf9f6;
+  --bg-gallery-main: #ebf1ed;
+  --bg-contact-main: #f5efe4;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 64px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--sand-100);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--forest-900);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--forest-600);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--gold-600);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sand-200);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sand-400);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest-500);
+}
